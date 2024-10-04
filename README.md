@@ -31,10 +31,10 @@ Set up environment variables in a .env file. For example:
 PORT=5000,
 MONGODB_URI=mongodb://localhost:27017/url_shortener
 
-#Run the server:
+## Run the server:
 npm run dev
 
-#API Endpoints
+## API Endpoints
 1. Shorten a URL
 Endpoint: POST /api/shorten
 Request Body:json
@@ -54,7 +54,7 @@ Endpoint: GET /api/analytics/:shortCode
 Rate Limiting
 Requests are limited to 100 per hour per IP address to prevent abuse.
 
-Testing the API
+## Testing the API
 You can use Postman or curl to test the endpoints. Here’s an example of how to shorten a URL:
 
 Set the request method to POST and enter the URL http://localhost:5000/api/shorten.
