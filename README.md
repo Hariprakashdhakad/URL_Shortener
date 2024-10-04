@@ -28,13 +28,13 @@ npm install
 
 Set up environment variables in a .env file. For example:
 
-PORT=5000
+PORT=5000,
 MONGODB_URI=mongodb://localhost:27017/url_shortener
 
-Run the server:
-
+#Run the server:
 npm run dev
-API Endpoints
+
+#API Endpoints
 1. Shorten a URL
 Endpoint: POST /api/shorten
 Request Body:json
@@ -44,8 +44,10 @@ Request Body:json
     "customCode": "example",  // Optional
     "expiresAt": "2024-10-31"  // Optional
 }
+
 2. Redirect to Original URL
 Endpoint: GET /api/:shortCode
+
 3. Get URL Analytics
 Endpoint: GET /api/analytics/:shortCode
 
